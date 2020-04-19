@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="LE_Eureka" />
+        <module name="LE" />
+        <module name="LE_Quizlet" />
+        <module name="LE_Zuul" />
+        <module name="LE_ConfigServer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="LE_Quizlet_NewVersion" target="1.8" />
+      <module name="LE_SpecialRouting" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="LE" options="-parameters" />
+      <module name="LE_Eureka" options="-parameters" />
+      <module name="LE_Quizlet" options="-parameters" />
+      <module name="LE_Quizlet_NewVersion" options="-parameters" />
+      <module name="LE_SpecialRouting" options="-parameters" />
+      <module name="LE_Zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

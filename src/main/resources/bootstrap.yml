@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  client:
+#  not to register with a Eureka service when the Spring Boot Eureka
+#  application starts because this is the Eureka service.
+    register-with-eureka: false
+#    when the Eureka service starts, it
+#    doesn’t try to cache its registry information locally
+    fetch-registry: false
+#    wait five minutes by default to give all of the services a chance to register
+#    with it before advertising them. Uncomment this for testing faster
+#  server:
+#    wait-time-in-ms-when-sync-empty: 5
